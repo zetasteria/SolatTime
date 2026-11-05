@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solat Time reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🕋 Solat Time</h1>
+        <nav>
+            <button id="show-prayer-page">Prayer Times</button>
+            <button id="show-reminders-page">My Reminders</button>
+     </nav> 
+    </header>
+
+    <main>
+        <section id="prayer-page">
+            <h2>🕌 Prayer Times</h2>
+            
+        <form id="location-form">
+                <label for="location">Enter your city</label>
+                <input
+                    id="location"
+                    list="location-options"
+                    placeholder="Type an area, such as Petaling"
+                    required
+                >
+                <datalist id="location-options"></datalist>
+
+                <button id="get-times-button" type="submit">Get prayer times</button>
+
+        </form>
+           
+            <p id="status-message">Please enter your location </p>
+
+            <div class="timer-card">
+                <p id="next-prayer-label">Next Prayer</p>
+                <p id="countdown">--:--:--</p>
+                <p id="activities">Your activity</p>
+                
+            </div>
+            <h3>Today's Prayer Times</h3>
+            <ul id="prayer-times"></ul>
+
+            <h3>Today's Prayer Tracker</h3>
+
+            <label><input type="checkbox" class="prayer-check"> Subuh</label><br>
+            <label><input type="checkbox" class="prayer-check"> Zohor</label><br>
+            <label><input type="checkbox" class="prayer-check"> Asar</label><br>
+            <label><input type="checkbox" class="prayer-check"> Maghrib</label><br>
+            <label><input type="checkbox" class="prayer-check"> Isyak</label><br>
+            <label><input type="checkbox" class="prayer-check"> Dhuha</label><br>
+            <label><input type="checkbox" class="prayer-check"> Hajat</label><br>
+            <label><input type="checkbox" class="prayer-check"> Tahajjud</label><br>
+            <label><input type="checkbox" class="prayer-check"> Taubat</label>
+
+            <p>Total Prayers Complete: <span id="prayer-total">0</span> / 9</p>
+           
+        </section>
+        <section id="reminders-page" hidden>
+            <h2>My Reminders</h2>
+            <form id="reminder-form">
+                <label for="reminder-title">Reminder title</label>
+                <input id="reminder-title" type="text" required>
+
+                <label for="reminder-date">Date</label>
+                <input id="reminder-date" type="date" required>
+
+                <label for="reminder-time">Time</label>
+                <input id="reminder-time" type="time" >
+
+                <label for="reminder-note">Note</label>
+                <textarea id="reminder-note"></textarea>
+
+                <button type="submit">Add reminder</button>
+            </form>
+
+            <p id="reminder-message"></p>
+            <ul id="reminder-list"></ul>
+        </section>
+    </main> 
+    <script src="script.js"></script>
+</body>
+   
+</html>

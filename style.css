@@ -1,0 +1,218 @@
+body {
+  background-image: url("bgbunga.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+header,
+main {
+  max-width: 800px;
+  margin: 70px auto;
+}
+header {
+  padding: 16px;
+  background: #832aa5;
+  border-radius: 12px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #3f1344;
+  color: white;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 90px;
+  padding: 20px;
+  background-image:url("bgbr.jpg");
+  border-radius: 12px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #c876d6;
+  border-radius: 8px;
+}
+
+.timer-card {
+  margin : 20px 0;
+  padding: 18px;
+  text-align: center;
+  background: #f8bcff;
+  border: 4px solid #51215e;
+  border-radius: 12px;
+}
+
+#countdown {
+  margin: 10px 0;
+  color: #8b5b45;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#activities {
+   margin-bottom: 10px;
+  color: #604c6b;
+}
+
+#prayer-times {
+  padding: 0;
+  list-style: none;
+}
+
+#prayer-times li {
+  margin: 6px 0;
+  padding: 8px;
+  background: #f0e7f7;
+  border-radius: 6px;
+}
+
+#reminder-form {
+  display: grid;
+  gap: 10px;
+  max-width: 420px;
+  margin: 16px 0;
+}
+
+#reminder-form label {
+  font-weight: bold;
+}
+
+#reminder-form input,
+#reminder-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #d9a8e8;
+  border-radius: 8px;
+  font: inherit;
+}
+
+#reminder-form textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+#reminder-form button {
+  justify-self: start;
+  background: #55205f;
+}
+
+#reminder-list {
+  padding: 0;
+  list-style: none;
+}
+
+#reminder-list li {
+  margin: 8px 0;
+  padding: 12px;
+  background: #f8e7fb;
+  border: 1px solid #d9a8e8;
+  border-radius: 8px;
+}
+
+.timer-card {
+  background: #d69aff;
+  border: 4px solid #310c46;
+  border-radius: 10px;
+  box-shadow: 0 4px 0 #3c114d;
+}
+
+#next-prayer-label {
+  color: #604c6b;
+  font-weight: bold;
+}
+
+#countdown {
+  color: #8b5b45;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#reminder-list {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+#reminder-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  background: #f8e7fb;
+  border: 1px solid #d9a8e8;
+  border-radius: 10px;
+}
+
+#reminder-list li span {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+#reminder-list li button {
+  min-width: 68px;
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+}
+
+#reminder-list li button[data-action="edit"] {
+  background: #56281a;
+}
+
+#reminder-list li button[data-action="delete"] {
+  background: #56281a;
+}
+
+#reminder-list li button:hover {
+  filter: brightness(1.10);
+}
+
+@media (max-width: 480px) {
+  #reminder-list li {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #reminder-list li span {
+    grid-column: 1 / -1;
+  }
+}
+
+header {
+  padding: 18px;
+  background: #7b3295;
+  border-radius: 12px;
+}
+
+header h1 {
+  margin-top: 0;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav button {
+  background: #4a165a;
+}
+
+main {
+  margin-top: 60px;
+}
